@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- // Необхідно відтворити функціонал як на відео Cenzor, а саме:
+// •	При кліку на ADD добавляти заборонене слово, яке відображатиметься в списку “Bad words”
+// •	Якщо поле для добавлення слова не заповнене виводити відповідне повідомлення
+// •	При кліку на Cenzor перевіряється чи є в textarea заборонене слово,
+// *    якщо так його заміняє на *, причому на ту кількість яка довжина слова.
+// •	Якщо textarea порожня виводити повідомлення про заповнення поля -->
+    <header>
+        <h2>List of prohibited words:</h2>
+    </header>
+    <main>
+        <div class="bad_words">
+            <div>
+                <h2>Bad words:</h2>
+            </div>
+            <div type="text" class="bad_list">
+                <ul id="forRemove">
+
+                </ul>
+            </div>
+        </div>
+        <form>
+            <input type="text" placeholder="word here..." class="add_bad">
+            <input type="button" class="add" value="Add">
+            <input type="button" class="reset" value="Reset">
+        </form>
+        <textarea class="textarea" placeholder="text here..."></textarea>
+        <input type="button" class="cenzor" value="Cenzor">
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
